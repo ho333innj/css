@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Vazir";
+    src : url(./../fonts/Vazir-FD.eot);
+    src : url(./../fonts/Vazir-FD.eot) format("embedded-opentype"),
+            url(./../fonts/Vazir-FD.woff2) format("woff2"),
+            url(./../fonts/Vazir-FD.woff) format("woff"),
+            url(./../fonts/Vazir-FD.ttf) format("truetype");
+}
+body{
+    font-family: vazir;
+    background-color: rgb(227, 229, 255);
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.section-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(99,99,99,0.5);
+    padding: 1rem 2rem;
+}
+.left-nav{
+    height: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.box-img-logo{
+    min-width: 60px;
+}
+.center-nav ul{
+    justify-content: space-between;
+    height: 100%;
+}
+.center-nav{
+    width: 50%;
+}
+.right-nav{
+  
+    width: 20%;
+    justify-content: space-between;
+}
+.group-icon{
+    display: flex;
+    gap: 1.5rem;
+}
+.user-section{
+    gap: 1rem;
+}
+.user-image{
+    width: 50px;
+    height: 50px;
+}
+.user-image img{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
