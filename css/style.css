@@ -29,7 +29,8 @@ a{
     margin: 0 auto;
 }
 .section-nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -53,17 +54,17 @@ a{
 .box-img-logo{
     min-width: 60px;
 }
+.center-nav{
+    height: 30px;
+
+}
 .center-nav ul{
     justify-content: space-between;
     height: 100%;
 }
-.center-nav{
-    width: 50%;
-}
+
 .right-nav{
-  
-    width: 20%;
-    justify-content: space-between;
+      justify-content: space-between;
 }
 .group-icon{
     display: flex;
@@ -82,4 +83,18 @@ a{
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+}
+.user-status{
+    background: aqua;
+    color: blueviolet;
+    border-radius: 20px;
+    padding: 0.4rem;
+    text-align: center;
+}
+.active{
+    background-image: linear-gradient(77deg , #c6d1f0 50%, #5c5aeb);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
 }
