@@ -104,6 +104,30 @@ a{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+#toggle-nav:checked + label + ul{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+#toggle-nav:checked + label span:first-child{
+    transform: rotate(135deg);
+    top: 5px;
+    position: relative;
+}
+#toggle-nav:checked + label span.line-mid{
+    transform: translateX(10px);
+    opacity: 0;
+}
+#toggle-nav:checked + label span:last-child{
+    position: relative;
+    transform: rotate(52deg);
+    top: -5px;
+}
+
+
+
 
 @media screen and (max-width:1050px) {
     .section-nav{
@@ -165,5 +189,58 @@ a{
     .user-status {
         font-size: 11px;
         padding: 0.2rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .center-nav{
+        display: none;
+    }
+    .list-nav-mobile{
+        position: fixed;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        transform: translateX(-300px);
+        transition: all 250ms ease-out;
+        -webkit-transition: all 250ms ease-out;
+        -moz-transition: all 250ms ease-out;
+        -ms-transition: all 250ms ease-out;
+        -o-transition: all 250ms ease-out;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 7px 10px;
+        text-align: right;
+        gap: 2.5rem;
+        overflow-x: hidden;
+}
+.line{
+    border-bottom: 2px solid;
+    display: block;
+    width: 15px;
+    margin-bottom: 3px;
+    transition:all 250ms ease-out;
+    -webkit-transition:all 250ms ease-out;
+    -moz-transition:all 250ms ease-out;
+    -ms-transition:all 250ms ease-out;
+    -o-transition:all 250ms ease-out;
+}
+.nav-mobile{
+    position: relative;
+    height: 13px;
+}
+.section-nav{
+        grid-template-columns: 47% 38% 3%;
+}
+}
+@media screen and (min-width:768px) {
+    .nav-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:520px) {
+    .section-nav {
+        grid-template-columns: 23% 61% 3%;
     }
 }
